@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Your Bag | ATELIER</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#291801",
+                        "secondary": "#5f5e5e",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#410006",
+                        "tertiary": "#000000",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-container": "#9b7f5d",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-fixed": "#ffdad8",
+                        "tertiary-fixed-dim": "#e2c19b",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#eae7e7",
+                        "inverse-primary": "#ffb3b0",
+                        "on-primary-container": "#ee444b",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary-fixed": "#ffddb6",
+                        "secondary-container": "#e4e2e1",
+                        "background": "#fcf9f8",
+                        "primary": "#000000",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-secondary-fixed-variant": "#474746",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "on-secondary-container": "#656464",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#93001a",
+                        "on-primary": "#ffffff",
+                        "outline": "#747878",
+                        "surface-bright": "#fcf9f8",
+                        "surface-tint": "#b91a2b",
+                        "tertiary-container": "#291801",
+                        "on-background": "#1c1b1b",
+                        "on-surface-variant": "#444748",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "primary-container": "#410006",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed": "#e4e2e1",
+                        "on-tertiary-fixed-variant": "#594325"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+
+        .font-editorial {
+            font-family: 'Noto Serif', serif;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+        }
+
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #fcf9f8;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #1c1b1b;
+        }
+    </style>
+</head>
+
+<body class="bg-background text-on-surface">
+    <!-- TopNavBar -->
+    <header
+        class="bg-[#fcf9f8] dark:bg-[#1A1A1A] text-black dark:text-white font-['Noto_Serif'] uppercase tracking-widest text-sm rounded-none w-full top-0 sticky z-50">
+        <div class="flex justify-between items-center px-12 py-8 w-full max-w-[1920px] mx-auto">
+            <a href="/" class="font-['Noto_Serif'] text-3xl font-bold tracking-tighter text-black dark:text-white">
+                ATELIER
+            </a>
+            <nav class="hidden md:flex gap-8">
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out"
+                    href="shop_product_listing_ethos_couture.html">SHOP</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out"
+                    href="shop_product_listing_ethos_couture.html">NEW ARRIVALS</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out"
+                    href="shop_product_listing_ethos_couture.html">BEST SELLERS</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out"
+                    href="shop_product_listing_ethos_couture.html">OFFERS</a>
+                <a class="text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out"
+                    href="shop_product_listing_ethos_couture.html">ABOUT</a>
+            </nav>
+            <div class="flex items-center gap-6">
+                <span
+                    class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">favorite</span>
+                <span
+                    class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">shopping_bag</span>
+                <span class="material-symbols-outlined cursor-pointer hover:opacity-70 transition-opacity">person</span>
+            </div>
+        </div>
+    </header>
+    <main class="max-w-[1920px] mx-auto px-12 py-20 min-h-screen">
+        <div class="flex flex-col lg:flex-row gap-20">
+            <!-- Left: Cart Items -->
+            <div class="flex-1">
+                <div class="mb-12">
+                    <h1 class="font-editorial text-5xl font-bold mb-4">Your Selection</h1>
+                    <p id="cart-count-label"
+                        class="font-label uppercase text-[0.6875rem] tracking-[0.2em] text-neutral-500">2 ITEMS IN CART
+                    </p>
+                </div>
+                <div id="cart-items-container" class="space-y-12">
+                    <!-- Product Item 1 -->
+                    <div class="group flex flex-col md:flex-row gap-8 pb-12 bg-surface">
+                        <div class="w-full md:w-48 aspect-[4/5] overflow-hidden bg-surface-container-low">
+                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                data-alt="High-fashion editorial shot of a woman in a structured charcoal grey wool blazer against a minimalist architectural background"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmvCYPsGIWPO1GqPTjal3gNiN_3Osth_Gav_R4z9afkQ-D1LVN7HGTjz7BG1XypO2eo27NpTI1LSM9whxN8lYF2DaAkInv3JNSaRm-KbFuRCv0sa7B0yy6i-KREBYs6GncDiIwAq8cyt3NmJpzh5kGGvEYENvCg4s8fA-8IyyBSeenhpapHc-H_xiqLl4HM4tLh--tZCseqsdzFHFEO-qReHYPPwIdyI3A-lvdK9D2dhKUZ1qU7e8W1sXF1O3vMISlNiJzL9EgaX1U" />
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between py-2">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-editorial text-2xl font-bold mb-2">Sculpted Wool Blazer</h3>
+                                    <p class="font-label text-xs tracking-wider text-neutral-500 uppercase mb-4">Color:
+                                        Anthracite | Size: 38</p>
+                                </div>
+                                <span class="font-editorial text-xl">$1,250.00</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-8">
+                                <div class="flex items-center border-b border-outline-variant/30 pb-1 gap-6">
+                                    <button class="hover:opacity-50 transition-opacity"><span
+                                            class="material-symbols-outlined text-sm">remove</span></button>
+                                    <span class="font-label text-sm w-4 text-center">01</span>
+                                    <button class="hover:opacity-50 transition-opacity"><span
+                                            class="material-symbols-outlined text-sm">add</span></button>
+                                </div>
+                                <button
+                                    class="font-label text-[0.6875rem] tracking-widest text-neutral-400 hover:text-error transition-colors flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm">close</span> REMOVE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Product Item 2 -->
+                    <div class="group flex flex-col md:flex-row gap-8 pb-12 bg-surface">
+                        <div class="w-full md:w-48 aspect-[4/5] overflow-hidden bg-surface-container-low">
+                            <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                                data-alt="Close up of luxury black leather trousers with silk lining details, soft dramatic side lighting highlighting the texture"
+                                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZOx2WzAyix2MskisK8ubTUNy_CmsIPJFzJ9riPGFJKr7CyfIUg3oXMU2cztLLXdEGa2BaiTenr9Stc-7CURqDvGarp68NSzQdBAIw8GRrcDh36JZQQ2hk1F62aTDByaI5bibPJdp1h8YEKjdJ4G-siqJGab0vHE6JBZN7JxJbnjrE-4aSc5Wt2uISptRFWST0sFZfsu-P6ZI_jvjnuwJpxTiLV3yKl8J-m_zZWeP45zeps-Rc2RwpQMM5NwaZKeQHng8jcnLTvAE8" />
+                        </div>
+                        <div class="flex-1 flex flex-col justify-between py-2">
+                            <div class="flex justify-between items-start">
+                                <div>
+                                    <h3 class="font-editorial text-2xl font-bold mb-2">Tapered Silk-Lined Trousers</h3>
+                                    <p class="font-label text-xs tracking-wider text-neutral-500 uppercase mb-4">Color:
+                                        Obsidian | Size: 36</p>
+                                </div>
+                                <span class="font-editorial text-xl">$890.00</span>
+                            </div>
+                            <div class="flex items-center justify-between mt-8">
+                                <div class="flex items-center border-b border-outline-variant/30 pb-1 gap-6">
+                                    <button class="hover:opacity-50 transition-opacity"><span
+                                            class="material-symbols-outlined text-sm">remove</span></button>
+                                    <span class="font-label text-sm w-4 text-center">01</span>
+                                    <button class="hover:opacity-50 transition-opacity"><span
+                                            class="material-symbols-outlined text-sm">add</span></button>
+                                </div>
+                                <button
+                                    class="font-label text-[0.6875rem] tracking-widest text-neutral-400 hover:text-error transition-colors flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-sm">close</span> REMOVE
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right: Order Summary -->
+            <div class="w-full lg:w-[400px]">
+                <div class="bg-surface-container-low p-10 space-y-10 sticky top-32">
+                    <h2 class="font-editorial text-3xl font-bold">Summary</h2>
+                    <div class="space-y-6">
+                        <div class="flex justify-between font-label text-[0.75rem] tracking-widest uppercase">
+                            <span class="text-neutral-500">Subtotal</span>
+                            <span id="cart-subtotal">$2,140.00</span>
+                        </div>
+                        <div class="flex justify-between font-label text-[0.75rem] tracking-widest uppercase">
+                            <span class="text-neutral-500">Shipping</span>
+                            <span id="cart-shipping">$35.00</span>
+                        </div>
+                        <div
+                            class="flex justify-between font-label text-[0.75rem] tracking-widest uppercase text-error">
+                            <span>Discount</span>
+                            <span>-$0.00</span>
+                        </div>
+                    </div>
+                    <div class="pt-8 border-t border-outline-variant/20">
+                        <div class="relative">
+                            <label
+                                class="block font-label text-[0.65rem] tracking-widest uppercase text-neutral-400 mb-2">Promotional
+                                Code</label>
+                            <div class="flex">
+                                <input
+                                    class="w-full bg-transparent border-0 border-b border-outline-variant py-3 px-0 font-label text-xs focus:ring-0 focus:border-primary transition-colors placeholder:text-neutral-300"
+                                    placeholder="ENTER CODE" type="text" />
+                                <button
+                                    class="ml-4 font-label text-[0.6875rem] tracking-widest hover:opacity-70">APPLY</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="pt-10 flex justify-between items-baseline">
+                        <span class="font-editorial text-lg italic">Total</span>
+                        <span id="cart-total" class="font-editorial text-4xl font-bold">$2,175.00</span>
+                    </div>
+                    <div class="pt-6 space-y-4">
+                        <button
+                            class="w-full bg-primary text-on-primary py-6 font-label text-[0.8125rem] tracking-[0.25em] uppercase hover:bg-primary-container transition-all duration-300 hover:tracking-[0.3em] flex items-center justify-center gap-3">
+                            Proceed to Checkout
+                            <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </button>
+                        <p
+                            class="text-center font-label text-[0.6rem] text-neutral-400 uppercase tracking-widest leading-loose px-4">
+                            Complementary shipping on orders over $5,000. Express shipping calculated at final step.
+                        </p>
+                    </div>
+                    <div class="pt-8 grid grid-cols-3 gap-4 border-t border-outline-variant/10">
+                        <div class="flex flex-col items-center text-center gap-2">
+                            <span class="material-symbols-outlined text-neutral-400 text-lg">verified_user</span>
+                            <span
+                                class="text-[0.55rem] font-label tracking-tighter text-neutral-500 uppercase">Secure</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center gap-2">
+                            <span class="material-symbols-outlined text-neutral-400 text-lg">local_shipping</span>
+                            <span
+                                class="text-[0.55rem] font-label tracking-tighter text-neutral-500 uppercase">Global</span>
+                        </div>
+                        <div class="flex flex-col items-center text-center gap-2">
+                            <span class="material-symbols-outlined text-neutral-400 text-lg">recycling</span>
+                            <span
+                                class="text-[0.55rem] font-label tracking-tighter text-neutral-500 uppercase">Eco-Wrap</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Carousel / Recommendations (Asymmetric Bento) -->
+        <section class="mt-40">
+            <div class="flex items-baseline justify-between mb-16">
+                <h2 class="font-editorial text-4xl">Complete the Aesthetic</h2>
+                <a class="font-label text-[0.6875rem] tracking-widest border-b border-primary pb-1 hover:opacity-50 transition-opacity"
+                    href="shop_product_listing_ethos_couture.html">EXPLORE EDITORIALS</a>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-4 h-[600px]">
+                <div class="md:col-span-2 bg-surface-container-low overflow-hidden relative group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Atmospheric wide shot of a model walking in a desert landscape wearing flowing black silk garments, high fashion editorial vibe"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2_rpieLC2qJzco0woC167qkxM4YPjFBJw3JCsT4LsfIw3nxnoVb77S8TYHjEj-yWg3kkrV_g1bCBh2y4pJ0-lJzoQVG_WHA40X847p2nY8-r5x-0jQ9aRYqTrv4RDjB29Qim6LcFzbSjdwsHmkZtUVXw2q-n_MsSNuFRHrVCVML2qhauZGSoIBLXzzbE--vruRIk0Wqp7b12qbCvxT0jDTwraDOQ36_ut8c_CCK2gPm4ZowQNDHfMzobEv1p_IDpa2V99clNSR78g" />
+                    <div class="absolute bottom-10 left-10 text-white">
+                        <p class="font-label text-[0.6rem] tracking-[0.3em] uppercase mb-2">New Arrivals</p>
+                        <h4 class="font-editorial text-2xl">The Nomad Series</h4>
+                    </div>
+                </div>
+                <div class="bg-surface-container-low overflow-hidden relative group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Minimalist product shot of a high-end black leather handbag with geometric silver hardware"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDzHq-qtSeLi3K4YMJl2ke_kAfmPgo2udcSoN8tyNzg2HxzmRtuEiVGKaP5gmXd5auqxXYq4vJzYsFu5AZ3PUy2z7c2Z5qNDIez1b2e73wi43_agre0Ht9gmoUiEq1h8PyzTXf8q_nfxXvGvB4i1TXYMnbo0VdhMGENTFZwxx4X0pEg-rg-58wvEZxuq7umY6d59cz-91PrAgx8-4Oe3EQUyKUsMBEKW-hoBo3tD_--Yc3x_ko63qUIQcEikqpIauEHRugVesGiQFMA" />
+                </div>
+                <div class="bg-surface-container-low overflow-hidden relative group cursor-pointer">
+                    <img class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                        data-alt="Macro shot of luxurious heavy silk fabric with deep folds and subtle sheen"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDyLSrjG7_RVUvqZfSwxCS1SDEFPYv5A0hGY30KUMUBYpjA2AV9MklPp65v9axNH7D-fSXS9ZOjisG6TUbwG8MYa3XByCH2laNtmMv2SKySHjuy4xN4a3oBQ_9miDT7j8vf-xSGTcxJWEhDw6h8kmnS2iZSYLoxRVWfJopmE2lyCCcTRxVMAQ5T8JTng-zyFaN9eIabd2DcdJ-zNcyuaRSKQ24HM4_o63SepLqiBbrMCF5Oie02Is9SFVLboc1r_DY4PHTadcQsKpgl" />
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="bg-[#f6f3f2] dark:bg-[#121212] text-black dark:text-white font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase rounded-none w-full border-t border-black/5">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto">
+            <div class="space-y-8">
+                <div class="font-['Noto_Serif'] text-xl font-bold text-black dark:text-white">ATELIER</div>
+                <p class="text-neutral-500 leading-relaxed max-w-[200px]">CURATING THE ESSENTIALS OF MODERN ELEGANCE
+                    WITH UNYIELDING PRECISION.</p>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-bold mb-4">ASSISTANCE</span>
+                <a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity"
+                    href="shop_product_listing_ethos_couture.html">CONTACT</a>
+                <a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity"
+                    href="shop_product_listing_ethos_couture.html">SHIPPING</a>
+                <a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity"
+                    href="shop_product_listing_ethos_couture.html">RETURNS</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-bold mb-4">LEGAL</span>
+                <a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity"
+                    href="shop_product_listing_ethos_couture.html">PRIVACY</a>
+                <a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="shop_product_listing_ethos_couture.html">TERMS</a>
+            </div>
+            <div class="flex flex-col gap-4">
+                <span class="font-bold mb-4">NEWSLETTER</span>
+                <p class="text-neutral-500 lowercase tracking-normal mb-2">Join the inner circle for exclusive previews.
+                </p>
+                <div class="relative">
+                    <input
+                        class="w-full bg-transparent border-0 border-b border-black py-2 px-0 focus:ring-0 focus:border-black transition-colors placeholder:text-neutral-400"
+                        placeholder="EMAIL ADDRESS" type="email" />
+                    <button class="absolute right-0 top-1/2 -translate-y-1/2">
+                        <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div
+            class="px-12 py-8 border-t border-black/5 text-[0.6rem] text-neutral-400 flex justify-between items-center">
+            <span>© 2024 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</span>
+            <div class="flex gap-8">
+                <a href="shop_product_listing_ethos_couture.html">INSTAGRAM</a>
+                <a href="shop_product_listing_ethos_couture.html">TWITTER</a>
+                <a href="shop_product_listing_ethos_couture.html">VOGUE CONNECT</a>
+            </div>
+        </div>
+    </footer>
+    <script src="cart.js"></script>
+</body>
+
+</html>

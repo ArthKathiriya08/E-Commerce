@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary-fixed": "#291801",
+                    "secondary": "#5f5e5e",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-primary-fixed": "#410006",
+                    "tertiary": "#000000",
+                    "surface-container": "#f0eded",
+                    "on-tertiary-container": "#9b7f5d",
+                    "surface-container-low": "#f6f3f2",
+                    "primary-fixed": "#ffdad8",
+                    "tertiary-fixed-dim": "#e2c19b",
+                    "secondary-fixed-dim": "#c8c6c5",
+                    "surface-container-high": "#eae7e7",
+                    "inverse-primary": "#ffb3b0",
+                    "on-primary-container": "#ee444b",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "tertiary-fixed": "#ffddb6",
+                    "secondary-container": "#e4e2e1",
+                    "background": "#fcf9f8",
+                    "primary": "#000000",
+                    "surface-dim": "#dcd9d9",
+                    "inverse-on-surface": "#f3f0ef",
+                    "on-secondary-fixed-variant": "#474746",
+                    "outline-variant": "#c4c7c7",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "surface": "#fcf9f8",
+                    "on-surface": "#1c1b1b",
+                    "on-secondary-container": "#656464",
+                    "on-secondary": "#ffffff",
+                    "on-primary-fixed-variant": "#93001a",
+                    "on-primary": "#ffffff",
+                    "outline": "#747878",
+                    "surface-bright": "#fcf9f8",
+                    "surface-tint": "#b91a2b",
+                    "tertiary-container": "#291801",
+                    "on-background": "#1c1b1b",
+                    "on-surface-variant": "#444748",
+                    "surface-container-highest": "#e5e2e1",
+                    "on-error": "#ffffff",
+                    "primary-container": "#410006",
+                    "on-tertiary": "#ffffff",
+                    "primary-fixed-dim": "#ffb3b0",
+                    "surface-variant": "#e5e2e1",
+                    "inverse-surface": "#313030",
+                    "secondary-fixed": "#e4e2e1",
+                    "on-tertiary-fixed-variant": "#594325"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0px",
+                    "lg": "0px",
+                    "xl": "0px",
+                    "full": "9999px"
+            },
+            "fontFamily": {
+                    "headline": ["Noto Serif"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 0, 'opsz' 24;
+            font-size: 20px;
+        }
+        .editorial-shadow {
+            box-shadow: 0 20px 60px rgba(28, 27, 27, 0.04);
+        }
+        body {
+            background-color: #fcf9f8;
+            font-family: 'Manrope', sans-serif;
+            -webkit-font-smoothing: antialiased;
+        }
+        ::-webkit-scrollbar {
+            width: 4px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f6f3f2;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1c1b1b;
+        }
+    </style>
+</head>
+<body class="text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-[#fcf9f8] dark:bg-[#1A1A1A] rounded-none w-full top-0 sticky z-50 transition-colors">
+<div class="flex justify-between items-center px-12 py-8 w-full max-w-[1920px] mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-['Noto_Serif'] text-3xl font-bold tracking-tighter text-black dark:text-white" href="#">ATELIER</a>
+<nav class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-black dark:text-white border-b-2 border-black dark:border-white pb-1 hover:tracking-[0.2em] transition-all ease-in-out" href="#">SHOP</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:tracking-[0.2em] transition-all ease-in-out" href="#">NEW ARRIVALS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:tracking-[0.2em] transition-all ease-in-out" href="#">BEST SELLERS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:tracking-[0.2em] transition-all ease-in-out" href="#">OFFERS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white hover:tracking-[0.2em] transition-all ease-in-out" href="#">ABOUT</a>
+</nav>
+</div>
+<div class="flex items-center gap-6">
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></button>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span></button>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+</div>
+</div>
+</header>
+<main class="max-w-[1920px] mx-auto px-12 pt-12 pb-24">
+<!-- Breadcrumbs -->
+<nav class="mb-12">
+<ul class="flex items-center gap-4 font-label text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-500">
+<li><a class="hover:text-on-surface transition-colors" href="#">Collection</a></li>
+<li class="flex items-center"><span class="material-symbols-outlined text-[12px] opacity-30">chevron_right</span></li>
+<li><a class="hover:text-on-surface transition-colors" href="#">Women</a></li>
+<li class="flex items-center"><span class="material-symbols-outlined text-[12px] opacity-30">chevron_right</span></li>
+<li class="text-on-surface">Asymmetric Silk Wrap Gown</li>
+</ul>
+</nav>
+<!-- Product Gallery & Info Section -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+<!-- Left: Gallery -->
+<div class="lg:col-span-7 grid grid-cols-12 gap-4">
+<div class="col-span-2 space-y-4">
+<button class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Close-up detailed shot of high-quality silk fabric texture under soft warm lighting with subtle draping shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsIsEQaZlnL8iTeDUsZEagExnYdwoCFcELa3IoYtOn3Pu6FRvabq2YfTZzzDVPnwQdz8M6gbQxG9fq8NEBsx-3jaW0FHsOOfueDFAJzchBmRoZlJhCMDroBmxhfmLJQzhjcwSMcHyOtjit81afOlQDQDO9y2VSTbYAnk4z2hfQqD_XZCpDNkgVBuBprFGNY8O58WlV7TDUXK2ar5bPG0XHMSxq5bKityYbgAZxGi37Lc2aS3YN2bmnDKdRHd3JqmOSPPYg9fja5DIv"/>
+</button>
+<button class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Fashion model from the back showing the asymmetric cut and back detailing of a luxury silk gown" src="https://lh3.googleusercontent.com/aida-public/AB6AXuChcY9zemHTSEGE-KXIqgQ1vOiDdMUOBUzDarCcqOtdYbUFklJmvDcWcaVF2Hzezq8Pl2TzVizrgywfR4BeJoUSXCezMG-mK0d7i2TayPQA6NmRAHev7f0bZZ4HevgswPdb-7vjZZZd1_enHOp6YMbWtq_FT8idxo4eXeBt3yfzjXetoyPbY7EJSRmzTdrFcr6DlKm2WC0N8RvGFMbfPwwdr58dv055-tRI6JmzMdKSTTXX1LtWLvlIROMdprHQUwL1r5EZP7hkcJ9V"/>
+</button>
+<button class="w-full aspect-[4/5] bg-surface-container-low overflow-hidden group">
+<img class="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity" data-alt="Side profile of a model walking in a flowing silk dress capturing movement and architectural lines" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUZQiEMsiX8FzOq7iB8cGp-ZDOR-zq_qnIYvxp2aeoIDMb86c_etlCcLNFnqdNe5a2HyC0uzTSbwfy7vBcPevGeWWyNIqylRYESfqx8YTJfTjh9hGD5Us6tvMh-lSLkkhHfceDIQl9Q0PqsUJkNWH_ujNBSCN8ylFFvRgRxWQTHXzhVLU-e_fte17AZrLCIXM1kH1Wt90OM8WiShddSsRMauAs9RiBTS3RIrLFmqiLOt1kUIpLHV065Iy7B3IXmho0TqHkJ2DNgXPN"/>
+</button>
+</div>
+<div class="col-span-10">
+<div class="bg-surface-container-low overflow-hidden aspect-[4/5] relative">
+<img class="w-full h-full object-cover hover:scale-110 transition-transform duration-700 cursor-zoom-in" data-alt="Full editorial shot of a luxury silk wrap gown in a minimalist studio setting with dramatic shadows and sharp focus" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDHEZe-x1cTGmRTOqPfJHQrLBaPg5uYln-_LnHdSIHGQPP5XHkjzM5ofFJ2Z8z4R_bt5QsV35MYnj-7A-V5WLyMvMQThPxBh9UrtGVxOtEMVR6lG8-ghkwFywRxNKSo_mxYUM7G2X6GpYr3xMkZ_RPCjspTN9sPYu8Tc-x8NX2RhVXNqzJrctxDhy3n7rM4_BtO0bSgj8yCKepLwu28PYfxbo_aT1zcTMIjE7ExkwwEad6DvKt57_nE1LUgDC-_d30TTbrobjUTbBQs"/>
+</div>
+</div>
+</div>
+<!-- Right: Details -->
+<div class="lg:col-span-5 sticky top-32">
+<div class="space-y-8">
+<header>
+<span class="font-label text-[0.6875rem] tracking-[0.2em] uppercase text-on-surface-variant block mb-4">Summer Capsule 2024</span>
+<h1 class="font-headline text-5xl font-bold tracking-tight mb-4">Asymmetric Silk Wrap Gown</h1>
+<div class="flex items-baseline gap-4">
+<span class="font-headline text-3xl font-light text-on-surface">$2,450.00</span>
+<span class="font-headline text-xl text-neutral-400 line-through">$3,100.00</span>
+<span class="font-label text-[0.6875rem] tracking-wider text-on-primary-container bg-primary-container/10 px-2 py-1">20% OFF</span>
+</div>
+</header>
+<div class="space-y-6">
+<!-- Color Selector -->
+<div>
+<span class="font-label text-[0.6875rem] tracking-[0.1em] uppercase block mb-4">Color: Midnight Noir</span>
+<div class="flex gap-4">
+<button class="w-10 h-10 bg-black border-2 border-on-surface ring-offset-4 ring-1 ring-black/10"></button>
+<button class="w-10 h-10 bg-[#E5E4E2] hover:opacity-80 transition-opacity"></button>
+<button class="w-10 h-10 bg-[#5F6366] hover:opacity-80 transition-opacity"></button>
+</div>
+</div>
+<!-- Size Selector -->
+<div>
+<div class="flex justify-between items-center mb-4">
+<span class="font-label text-[0.6875rem] tracking-[0.1em] uppercase">Select Size</span>
+<button class="font-label text-[0.6875rem] tracking-[0.1em] uppercase underline hover:opacity-70 transition-opacity">Size Guide</button>
+</div>
+<div class="grid grid-cols-4 gap-2">
+<button class="py-4 border border-outline-variant hover:border-on-surface transition-colors font-label text-xs uppercase">FR 34</button>
+<button class="py-4 border border-on-surface bg-surface-container transition-colors font-label text-xs uppercase">FR 36</button>
+<button class="py-4 border border-outline-variant hover:border-on-surface transition-colors font-label text-xs uppercase">FR 38</button>
+<button class="py-4 border border-outline-variant hover:border-on-surface transition-colors font-label text-xs uppercase">FR 40</button>
+</div>
+</div>
+<!-- Quantity & Actions -->
+<div class="space-y-4 pt-6">
+<div class="flex gap-4 h-16">
+<div class="flex border border-outline-variant items-center w-32 px-4 justify-between">
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">remove</span></button>
+<span class="font-label">01</span>
+<button class="hover:text-primary transition-colors"><span class="material-symbols-outlined">add</span></button>
+</div>
+<button class="flex-1 bg-primary text-on-primary font-label text-xs tracking-[0.2em] uppercase hover:bg-primary-container transition-all duration-300">
+                                    ADD TO SHOPPING BAG
+                                </button>
+</div>
+<button class="w-full h-16 bg-transparent border border-primary text-on-surface font-label text-xs tracking-[0.2em] uppercase hover:bg-surface-container-low transition-all duration-300">
+                                INSTANT CHECKOUT
+                            </button>
+</div>
+</div>
+<!-- Delivery/Returns Info -->
+<div class="space-y-4 pt-8 border-t border-outline-variant/10">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined opacity-60">local_shipping</span>
+<div>
+<p class="font-label text-xs uppercase tracking-wider mb-1">Complimentary Shipping</p>
+<p class="text-[11px] text-neutral-500 uppercase tracking-tighter">Est. Delivery within 2-4 business days</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined opacity-60">refresh</span>
+<div>
+<p class="font-label text-xs uppercase tracking-wider mb-1">Hassle-Free Returns</p>
+<p class="text-[11px] text-neutral-500 uppercase tracking-tighter">30-day extended returns policy</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Description & Specifications Bento -->
+<section class="mt-32 border-t border-outline-variant/10 pt-24">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12">
+<div class="md:col-span-5">
+<h2 class="font-headline text-3xl font-bold mb-8">The Craftsmanship</h2>
+<p class="font-body text-lg leading-relaxed text-neutral-600 mb-8">
+                        The Ethos Couture Asymmetric Wrap Gown is a testament to the Digital Atelier's commitment to structural elegance. Crafted from 40mm double-faced silk satin, each piece undergoes a 12-hour hand-draping process in our Milanese workshop.
+                    </p>
+<p class="font-body text-lg leading-relaxed text-neutral-600">
+                        The architecture of the neckline provides a sharp contrast to the fluid movement of the biased-cut skirt, creating a silhouette that is both grounded and ethereal.
+                    </p>
+</div>
+<div class="md:col-span-7 bg-surface-container-low p-12 space-y-12">
+<div class="grid grid-cols-2 gap-12">
+<div>
+<h3 class="font-label text-[0.6875rem] tracking-[0.2em] uppercase text-on-surface mb-4">Specifications</h3>
+<ul class="font-body text-sm space-y-3 text-neutral-500">
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Fabric</span> <span>100% Mulberry Silk</span></li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Lining</span> <span>Crêpe de Chine</span></li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Closure</span> <span>Concealed Side Zip</span></li>
+<li class="flex justify-between border-b border-outline-variant/10 pb-2"><span>Made in</span> <span>Italy</span></li>
+</ul>
+</div>
+<div>
+<h3 class="font-label text-[0.6875rem] tracking-[0.2em] uppercase text-on-surface mb-4">Care</h3>
+<ul class="font-body text-sm space-y-3 text-neutral-500">
+<li>Professional dry clean only</li>
+<li>Cool iron on reverse</li>
+<li>Avoid contact with perfumes</li>
+<li>Store in breathable garment bag</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Reviews Section -->
+<section class="mt-32 border-t border-outline-variant/10 pt-24">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-headline text-3xl font-bold mb-4">Client Appraisals</h2>
+<div class="flex items-center gap-4">
+<div class="flex text-on-surface">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined">star_half</span>
+</div>
+<span class="font-label text-sm uppercase tracking-widest">4.8 / 5.0 (42 REVIEWS)</span>
+</div>
+</div>
+<button class="font-label text-xs uppercase tracking-widest border border-primary px-8 py-4 hover:bg-primary hover:text-on-primary transition-all duration-300">Write A Review</button>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review Card 1 -->
+<div class="bg-surface-container-lowest p-8 editorial-shadow">
+<div class="flex gap-1 mb-4 opacity-40">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline text-xl mb-4 leading-tight italic">"The weight of the silk is unparalleled. It drapes like a second skin."</p>
+<div class="mt-auto">
+<span class="font-label text-[0.6875rem] tracking-[0.1em] uppercase block">Elena R.</span>
+<span class="font-label text-[0.5rem] text-neutral-400 uppercase">Verified Purchase</span>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-container-lowest p-8 editorial-shadow">
+<div class="flex gap-1 mb-4 opacity-40">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline text-xl mb-4 leading-tight italic">"Exceptional architectural lines. A true editorial statement piece."</p>
+<div class="mt-auto">
+<span class="font-label text-[0.6875rem] tracking-[0.1em] uppercase block">Julianne V.</span>
+<span class="font-label text-[0.5rem] text-neutral-400 uppercase">Verified Purchase</span>
+</div>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-container-lowest p-8 editorial-shadow">
+<div class="flex gap-1 mb-4 opacity-40">
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-xs">star</span>
+</div>
+<p class="font-headline text-xl mb-4 leading-tight italic">"Perfect for gala season. The midnight noir is incredibly deep."</p>
+<div class="mt-auto">
+<span class="font-label text-[0.6875rem] tracking-[0.1em] uppercase block">Sophie T.</span>
+<span class="font-label text-[0.5rem] text-neutral-400 uppercase">Verified Purchase</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Related Products Slider -->
+<section class="mt-32 border-t border-outline-variant/10 pt-24">
+<div class="flex justify-between items-center mb-12">
+<h2 class="font-headline text-3xl font-bold">Curated Completions</h2>
+<div class="flex gap-4">
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-on-surface hover:text-surface transition-colors"><span class="material-symbols-outlined">west</span></button>
+<button class="w-12 h-12 border border-outline-variant flex items-center justify-center hover:bg-on-surface hover:text-surface transition-colors"><span class="material-symbols-outlined">east</span></button>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+<!-- Product Card 1 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Close up of luxury high-heeled pointed-toe evening shoes with delicate straps on a neutral background" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAsB19SwFb4sE2aUdkKaFU3N9jrBquZ01SdyZF5NTMCyPyjGZkuIIor1NOW2f8OkBOyNB5IwmuDc2qbFuuQyI_9sc3F5EDiWng1trt0IUS_bl24bZG0n8jMGPRtZc50PkCWElfmt9bFemSL-iWhtDyahEPKedNy3MboeBkjwe2GQbCkg-KFfncYiytSj4eyhJ8D9bECHgIvdkVdXhIdmpvmok-XQL92IusEAVa8IydJh9EeHZtzpUnAnWv1xwJdVAmlH_fsaUW1EWXP"/>
+<div class="absolute inset-0 bg-surface-dim opacity-0 group-hover:opacity-10 transition-opacity"></div>
+</div>
+<p class="font-label text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-500 mb-1">Accessories</p>
+<h3 class="font-headline text-lg font-bold mb-2">Sculpted Heel Slingback</h3>
+<p class="font-headline text-sm">$890.00</p>
+</div>
+<!-- Product Card 2 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Luxury minimal leather clutch bag held by a model wearing neutral tones in high-end editorial lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6gtGEO-vJRuW8QygFbRyzqyqWS1SPH37uTRnBJEkWutl07j3x6tueJ0E7qivCR8YrLQoVGW1YGE3z5aUZvd_aFw1sLcOknzzouIPkMHUOD1xaklgPxATvCuQcyNZmqbibRoglDVooNEe8WelOZGPAtBccvSzjHKxXda2LTd6JYFz9RQCa8E6E4OduSrme4Rjvyf3ynJqdsvtgssuw8WYGSxjolk33T4j_ErUyNctCyu1O9U_UfIrUNcZ3frWMq1Cp9QadRm_dJGwM"/>
+<div class="absolute inset-0 bg-surface-dim opacity-0 group-hover:opacity-10 transition-opacity"></div>
+</div>
+<p class="font-label text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-500 mb-1">Leather Goods</p>
+<h3 class="font-headline text-lg font-bold mb-2">Micro Envelop Clutch</h3>
+<p class="font-headline text-sm">$1,250.00</p>
+</div>
+<!-- Product Card 3 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Detailed close-up of a structured luxury blazer with precise stitching and high-quality wool fabric" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwhOpCrgy3zire7ACHrrt4FO2uQIH3mb8rU7W2YgU8073XdqYb1kNm8v1wTQnO6SJKkEHvGC4HnbTpLWwy7XdIrtRycx2v6mghSWfE1YjzPhA8-U5pI1Gs4X04AseKW7POcej7fEB9l5_GqP8sx3u09KWuIcefr0bjY_sm962_VN1T_BGPSYqqB1xnWo_Io-rEEEhr33WH7ZmFXzcyO2K-BMdvj75IqWqaHf461FX8TZmpTvcUh7W4-l7IHFV5d_QWIgkm_u1t30yl"/>
+<div class="absolute inset-0 bg-surface-dim opacity-0 group-hover:opacity-10 transition-opacity"></div>
+</div>
+<p class="font-label text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-500 mb-1">Tailoring</p>
+<h3 class="font-headline text-lg font-bold mb-2">Double-Breasted Wool Blazer</h3>
+<p class="font-headline text-sm">$3,200.00</p>
+</div>
+<!-- Product Card 4 -->
+<div class="group cursor-pointer">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden mb-6 relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="Sleek minimalist gold earrings showcased on a dark marble surface with soft focal depth" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMZ2ex2UkbL1DrJCVpIaqf8VWJX-wqXNctusEYR-Snq4Jb62VXVOuOhtXQq_TgQ2VchkVcS_2aylDARL29A8LxyQuBGI1E9y-OrA-uQtgJ0tVM0NJC9ZlPwQnAXmAncsX3j82awiTxS2UUsYn7a82FyAnJOZ23S716IhOIUxkK5dQTycriQTZzufAifdWwH0xCwuHwfEC5Pc82lsIlugqZTPRCVPPWWL2suabnwSegB_lC2h0i6rwrZbNwYmwE6oU8zencdUWnXDBc"/>
+<div class="absolute inset-0 bg-surface-dim opacity-0 group-hover:opacity-10 transition-opacity"></div>
+</div>
+<p class="font-label text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-500 mb-1">Fine Jewelry</p>
+<h3 class="font-headline text-lg font-bold mb-2">18k Sculpted Gold Hoops</h3>
+<p class="font-headline text-sm">$1,800.00</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#121212] rounded-none w-full border-t border-black/5 transition-colors">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto">
+<div>
+<a class="font-['Noto_Serif'] text-xl font-bold text-black dark:text-white mb-8 block" href="#">ATELIER</a>
+<p class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400 mb-6">CURATING BEYOND THE ORDINARY. HIGH FASHION, REIMAGINED FOR THE DIGITAL AGE.</p>
+<div class="flex gap-4">
+<a class="hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">alternate_email</span></a>
+<a class="hover:opacity-70 transition-opacity" href="#"><span class="material-symbols-outlined">chat_bubble</span></a>
+</div>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-['Manrope'] text-[0.6875rem] tracking-[0.2em] font-bold uppercase mb-4">ASSISTANCE</h4>
+<a class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">CONTACT</a>
+<a class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">SHIPPING</a>
+<a class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">RETURNS</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="font-['Manrope'] text-[0.6875rem] tracking-[0.2em] font-bold uppercase mb-4">LEGAL</h4>
+<a class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">PRIVACY</a>
+<a class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">TERMS</a>
+</div>
+<div class="flex flex-col gap-6">
+<h4 class="font-['Manrope'] text-[0.6875rem] tracking-[0.2em] font-bold uppercase mb-4">NEWSLETTER</h4>
+<p class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-600 dark:text-neutral-400">JOIN THE INNER CIRCLE FOR EXCLUSIVE PREVIEWS AND EARLY ACCESS.</p>
+<div class="border-b border-black/20 pb-2 flex justify-between items-center">
+<input class="bg-transparent border-none focus:ring-0 font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase w-full p-0" placeholder="EMAIL ADDRESS" type="email"/>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined">east</span></button>
+</div>
+</div>
+</div>
+<div class="px-12 py-8 border-t border-black/5">
+<p class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase text-neutral-500">© 2024 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<script src="cart.js"></script>
+</body></html>

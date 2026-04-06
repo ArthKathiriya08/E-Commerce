@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta name="description" content="Shop the ATELIER collection — Outerwear, Dresses, Tailoring, Knitwear and Accessories. Architectural precision meets ethical craftsmanship."/>
+<title>SHOP | ATELIER</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&amp;family=Manrope:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-tertiary-fixed": "#291801",
+                        "secondary": "#5f5e5e",
+                        "error": "#ba1a1a",
+                        "on-error-container": "#93000a",
+                        "on-primary-fixed": "#410006",
+                        "tertiary": "#000000",
+                        "surface-container": "#f0eded",
+                        "on-tertiary-container": "#9b7f5d",
+                        "surface-container-low": "#f6f3f2",
+                        "primary-fixed": "#ffdad8",
+                        "tertiary-fixed-dim": "#e2c19b",
+                        "secondary-fixed-dim": "#c8c6c5",
+                        "surface-container-high": "#eae7e7",
+                        "inverse-primary": "#ffb3b0",
+                        "on-primary-container": "#ee444b",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "tertiary-fixed": "#ffddb6",
+                        "secondary-container": "#e4e2e1",
+                        "background": "#fcf9f8",
+                        "primary": "#000000",
+                        "surface-dim": "#dcd9d9",
+                        "inverse-on-surface": "#f3f0ef",
+                        "on-secondary-fixed-variant": "#474746",
+                        "outline-variant": "#c4c7c7",
+                        "surface-container-lowest": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "surface": "#fcf9f8",
+                        "on-surface": "#1c1b1b",
+                        "on-secondary-container": "#656464",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#93001a",
+                        "on-primary": "#ffffff",
+                        "outline": "#747878",
+                        "surface-bright": "#fcf9f8",
+                        "surface-tint": "#b91a2b",
+                        "tertiary-container": "#291801",
+                        "on-background": "#1c1b1b",
+                        "on-surface-variant": "#444748",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-error": "#ffffff",
+                        "primary-container": "#410006",
+                        "on-tertiary": "#ffffff",
+                        "primary-fixed-dim": "#ffb3b0",
+                        "surface-variant": "#e5e2e1",
+                        "inverse-surface": "#313030",
+                        "secondary-fixed": "#e4e2e1",
+                        "on-tertiary-fixed-variant": "#594325"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "0px",
+                        "xl": "0px",
+                        "full": "9999px"
+                    },
+                    "fontFamily": {
+                        "headline": ["Noto Serif"],
+                        "body": ["Manrope"],
+                        "label": ["Manrope"]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        body { font-family: 'Manrope', sans-serif; background-color: #fcf9f8; }
+        .editorial-shadow { box-shadow: 0 20px 60px -15px rgba(28, 27, 27, 0.04); }
+    </style>
+</head>
+<body class="bg-surface text-on-surface">
+<!-- TopNavBar -->
+<header class="bg-[#fcf9f8] dark:bg-[#1A1A1A] rounded-none w-full top-0 sticky z-50 bg-[#f6f3f2] dark:bg-[#252525] transition-colors flat no shadows">
+<nav class="flex justify-between items-center px-12 py-8 w-full max-w-[1920px] mx-auto">
+<div class="flex items-center gap-12">
+<a class="font-['Noto_Serif'] text-3xl font-bold tracking-tighter text-black dark:text-white" href="/">ATELIER</a>
+<div class="hidden md:flex gap-8 items-center">
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-black dark:text-white border-b-2 border-black dark:border-white pb-1 hover:tracking-[0.2em] transition-all ease-in-out" href="/shop">SHOP</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out" href="/shop">NEW ARRIVALS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out" href="/shop">BEST SELLERS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out" href="#">OFFERS</a>
+<a class="font-['Noto_Serif'] uppercase tracking-widest text-sm text-neutral-500 dark:text-neutral-400 hover:text-black dark:hover:text-white transition-all duration-300 hover:tracking-[0.2em] ease-in-out" href="#">ABOUT</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="relative hidden lg:block">
+<input class="bg-surface-container-high border-none border-b border-black text-sm px-4 py-2 w-64 focus:ring-0 focus:border-black placeholder:text-neutral-400 uppercase tracking-widest font-label" placeholder="Search the collection..." type="text"/>
+<span class="material-symbols-outlined absolute right-2 top-2 text-xl">search</span>
+</div>
+<div class="flex gap-4">
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="favorite">favorite</span></button>
+<a href="shopping_cart_ethos_couture.html" style="position:relative">
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="shopping_bag">shopping_bag</span></button>
+</a>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined" data-icon="person">person</span></button>
+</div>
+</div>
+</nav>
+</header>
+<main class="max-w-[1920px] mx-auto px-12 py-12">
+<div class="flex flex-col md:flex-row gap-16">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 flex-shrink-0 space-y-12">
+<div>
+<h3 class="font-label text-[0.6875rem] font-bold tracking-[0.2em] uppercase mb-8 border-b border-outline-variant/20 pb-2">Category</h3>
+<ul class="space-y-4">
+<li><a class="text-sm uppercase tracking-widest hover:pl-2 transition-all duration-300 flex justify-between items-center group" href="#">Outerwear <span class="text-[10px] opacity-0 group-hover:opacity-100">(12)</span></a></li>
+<li><a class="text-sm uppercase tracking-widest hover:pl-2 transition-all duration-300 flex justify-between items-center group font-bold" href="#">Dresses <span class="text-[10px] opacity-100">(24)</span></a></li>
+<li><a class="text-sm uppercase tracking-widest hover:pl-2 transition-all duration-300 flex justify-between items-center group" href="#">Tailoring <span class="text-[10px] opacity-0 group-hover:opacity-100">(08)</span></a></li>
+<li><a class="text-sm uppercase tracking-widest hover:pl-2 transition-all duration-300 flex justify-between items-center group" href="#">Knitwear <span class="text-[10px] opacity-0 group-hover:opacity-100">(15)</span></a></li>
+<li><a class="text-sm uppercase tracking-widest hover:pl-2 transition-all duration-300 flex justify-between items-center group" href="#">Accessories <span class="text-[10px] opacity-0 group-hover:opacity-100">(31)</span></a></li>
+</ul>
+</div>
+<div>
+<h3 class="font-label text-[0.6875rem] font-bold tracking-[0.2em] uppercase mb-8 border-b border-outline-variant/20 pb-2">Price Range</h3>
+<div class="space-y-6">
+<input class="w-full accent-black h-px bg-outline-variant" max="5000" min="0" type="range"/>
+<div class="flex justify-between font-headline text-sm italic">
+<span>$250</span>
+<span>$4,500</span>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-label text-[0.6875rem] font-bold tracking-[0.2em] uppercase mb-8 border-b border-outline-variant/20 pb-2">Size</h3>
+<div class="grid grid-cols-3 gap-2">
+<button class="border border-outline-variant/30 py-2 text-xs hover:border-black transition-colors uppercase">XS</button>
+<button class="border border-black py-2 text-xs uppercase">S</button>
+<button class="border border-outline-variant/30 py-2 text-xs hover:border-black transition-colors uppercase">M</button>
+<button class="border border-outline-variant/30 py-2 text-xs hover:border-black transition-colors uppercase">L</button>
+<button class="border border-outline-variant/30 py-2 text-xs hover:border-black transition-colors uppercase">XL</button>
+</div>
+</div>
+<div>
+<h3 class="font-label text-[0.6875rem] font-bold tracking-[0.2em] uppercase mb-8 border-b border-outline-variant/20 pb-2">Palette</h3>
+<div class="flex flex-wrap gap-3">
+<button class="w-6 h-6 bg-[#000000] border border-outline-variant/20"></button>
+<button class="w-6 h-6 bg-[#FFFFFF] border border-outline-variant/20"></button>
+<button class="w-6 h-6 bg-[#E5E2E1] border border-outline-variant/20"></button>
+<button class="w-6 h-6 bg-[#410006] border border-outline-variant/20"></button>
+<button class="w-6 h-6 bg-[#B91A2B] border border-outline-variant/20"></button>
+</div>
+</div>
+</aside>
+<!-- Product Grid Section -->
+<div class="flex-1">
+<!-- Sorting Bar -->
+<div class="flex justify-between items-center mb-12 pb-6 border-b border-outline-variant/10">
+<span class="font-headline italic text-sm text-secondary">Showing 24 of 142 items</span>
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-2 group cursor-pointer">
+<span class="font-label text-[0.6875rem] tracking-widest uppercase">Sort By:</span>
+<span class="font-label text-[0.6875rem] font-bold tracking-widest uppercase">Newest</span>
+<span class="material-symbols-outlined text-sm">expand_more</span>
+</div>
+<div class="flex gap-2">
+<button class="p-2 bg-surface-container-high"><span class="material-symbols-outlined text-sm">grid_view</span></button>
+<button class="p-2 hover:bg-surface-container-high transition-colors"><span class="material-symbols-outlined text-sm">view_agenda</span></button>
+</div>
+</div>
+</div>
+<!-- Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 gap-x-8 gap-y-16">
+<!-- Product Card 1 -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<a href="product_details_ethos_couture.html">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="editorial fashion shot of a woman in a structural black wool coat against a minimalist grey concrete background with sharp shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA8BKH1_0Qozt72G0zjJUeMlWLwQEzT2PSyREPAaz-ML66uy0quZKYBaWmVoSHtQj58ffREJ-FUhMUtcqQRS6EuJseV9gnPPOtu5p7uAllUjOAAVwZOxyiVPSfU3s51ualvCO2btSp2UPK5Mna95QHbTg1_7oFpwHBtj3Yoj16CitOsduVPetURMt7foavEkansXGeh7wh8zZHQQB8mrnJFa3ZpuNlR1cGjB-9fMVfFBiQkzHOQGyZegmTrcJxBKpjOLSatjm2tdZYA"/>
+</a>
+<div class="absolute top-4 left-4 bg-primary text-on-primary px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-label">New Arrival</div>
+<button class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[0.625rem] tracking-widest text-secondary uppercase">Outerwear</p>
+<div class="flex justify-between items-start">
+<a href="product_details_ethos_couture.html"><h4 class="font-headline text-lg group-hover:underline underline-offset-4 decoration-1">The Sculpted Trench</h4></a>
+<span class="font-headline italic">$1,450</span>
+</div>
+</div>
+</div>
+<!-- Product Card 2 -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<a href="product_details_ethos_couture.html">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="high-fashion portrait of a silk ivory slip dress hanging in a minimalist light-filled studio with soft fabric textures" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMopIRaoOWe1aMMVL2t-yVr-qOgv4UrNFumBGuv23ujvoBonmhlI8GzNaFVWcrS2l2C9Afpg0MY8PGbTAZcEDV3JNAcveDvPJZ4wEi3mPRumOlDJRrKouAHMx1YUzGGdAp_xKnDu1O-aSV5QMAmePCThHvGtQSNr2A_2t6H411DOKTZWl8CP1nRqF4PDmeB9J44O7jWGDroO-uUZsjjaSZbWa3Kimm1SFlo6sUej12OmLhrwhhohVI2VFcOm6LV6jhNrSD-yV53UI"/>
+</a>
+<button class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[0.625rem] tracking-widest text-secondary uppercase">Dresses</p>
+<div class="flex justify-between items-start">
+<a href="product_details_ethos_couture.html"><h4 class="font-headline text-lg group-hover:underline underline-offset-4 decoration-1">Lumina Silk Gown</h4></a>
+<span class="font-headline italic">$890</span>
+</div>
+</div>
+</div>
+<!-- Product Card 3 -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<a href="product_details_ethos_couture.html">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="man wearing a sharp charcoal double-breasted blazer with premium fabric texture in a high-end architectural setting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_-ulQOmC5pz_7sPB9r0C2W7IzxdAbBfwPNvquoMMmWy0aa4plG8usAvi6N82HM67dEW5N6cPg2P47v-6L4DWeifQGDm1nntxvOGuETfHCbLy1tjwM_rei45klqMKQ-c_Uh9C8MvIRZjxAxlOl7r2-ew0HqHSUL6fju9ffIDnTC_YH7nmJidpgX5hw_dJtcLcHfHR8QkDoOzvDQvGJTUrCVBrNgfxd9n5ucZw43ETIvJlNKlO11dyODKdloBOSWLsmivQY5sJvxBSh"/>
+</a>
+<div class="absolute top-4 left-4 bg-primary-container text-on-primary-container px-3 py-1 text-[10px] tracking-[0.2em] uppercase font-label">Limited</div>
+<button class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[0.625rem] tracking-widest text-secondary uppercase">Tailoring</p>
+<div class="flex justify-between items-start">
+<a href="product_details_ethos_couture.html"><h4 class="font-headline text-lg group-hover:underline underline-offset-4 decoration-1">Anthracite Blazer</h4></a>
+<span class="font-headline italic">$2,100</span>
+</div>
+</div>
+</div>
+<!-- Product Card 4 -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<a href="product_details_ethos_couture.html">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="still life of a premium cashmere sweater in neutral beige tone folded neatly on a textured stone surface with warm sunlight" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBTirCW_xn_W2q05bkkVaAye2DCmPt2L66PTuUGdDKstnzzs87hME3is2_i4zFZvqm8fTj296fv91tl11EeFQetthueIISXU9jm2z3_fsh_g_4V77Dju3jwRTglgE2MgqxsEb7ODVOOMs1AihMga2kbP_I7JBSlXijrJytiSnQ5UMH2wMZeLRpb6YfY8hkajPI8dJoGMq4iaKl8fs3KyJr6wB-WJ4ZKp8QXULMVngO2ZymsuTyxJb-loHrnk4jUfabf9g0kkeEldcJD"/>
+</a>
+<button class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[0.625rem] tracking-widest text-secondary uppercase">Knitwear</p>
+<div class="flex justify-between items-start">
+<a href="product_details_ethos_couture.html"><h4 class="font-headline text-lg group-hover:underline underline-offset-4 decoration-1">Cloud Cashmere Rollneck</h4></a>
+<span class="font-headline italic">$550</span>
+</div>
+</div>
+</div>
+<!-- Product Card 5 -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<a href="product_details_ethos_couture.html">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="woman wearing high-waisted wide-leg trousers in cream wool standing in a minimalist art gallery space" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAAcYFnR8Xx-gm7IxFt3pbjTA_eR4S8YIjtNlspbmVkGia8baElD6eeCNy_rc-xUbbzXks2xMr4xddyrEViShp9M44OOh1tL27L-HXYucTlv-pIQRFmH6mAuXB06f-c7HXKUyR1o3e_NhjK0l5kpgAy_y2KtrnX6a3bqAHnOKNTPwscM8-ZDSqzNtReOOJE-XKG2aEz9hT_uvVkI6vFmbnapCl2-zCjagasKVl1xMjKxpAMCv9IZbC1HECZFZ1eRPVoXjWESeuiduAU"/>
+</a>
+<button class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[0.625rem] tracking-widest text-secondary uppercase">Tailoring</p>
+<div class="flex justify-between items-start">
+<a href="product_details_ethos_couture.html"><h4 class="font-headline text-lg group-hover:underline underline-offset-4 decoration-1">Monumental Trouser</h4></a>
+<span class="font-headline italic">$720</span>
+</div>
+</div>
+</div>
+<!-- Product Card 6 -->
+<div class="group relative">
+<div class="aspect-[4/5] overflow-hidden bg-surface-container-low mb-6 relative">
+<a href="product_details_ethos_couture.html">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="luxury leather handbag in deep burgundy with gold hardware placed on a dark reflective surface with moody lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAD6dZyDOm8wpW7Vce-n5E6Oq9RDYRcRDpubzczvtxGp31vJHODFjTiPv4M5uKMOmwgv45wPnKfpnyi1ayF2RGV9Ii2_iRlWlNdfJuupBtzra1JPQt2ccWIUV6m-666n31akUexCGzD6DMx2x4fHAbwHYlj_-tetu2W_UPhtgAViDuhr37To946SbT-DvJYnXgfHjQbY_9bdsfXL27qpVlvHtWXkmOs88H6ieejoPi0QDwopzm-xsGNcMiC90DXrm11UT-Ry2ATmLWg"/>
+</a>
+<button class="absolute bottom-4 right-4 bg-surface/90 backdrop-blur-md p-3 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+<span class="material-symbols-outlined">add_shopping_cart</span>
+</button>
+</div>
+<div class="space-y-1">
+<p class="font-label text-[0.625rem] tracking-widest text-secondary uppercase">Accessories</p>
+<div class="flex justify-between items-start">
+<a href="product_details_ethos_couture.html"><h4 class="font-headline text-lg group-hover:underline underline-offset-4 decoration-1">Heritage Carryall</h4></a>
+<span class="font-headline italic">$2,800</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Pagination -->
+<div class="mt-24 flex justify-center items-center gap-4">
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 hover:border-black transition-all group">
+<span class="material-symbols-outlined text-sm group-hover:-translate-x-1 transition-transform">arrow_back</span>
+</button>
+<div class="flex gap-2">
+<button class="w-12 h-12 flex items-center justify-center bg-primary text-on-primary text-sm font-bold">01</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 hover:border-black text-sm transition-all">02</button>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 hover:border-black text-sm transition-all">03</button>
+<span class="w-12 h-12 flex items-center justify-center text-sm">...</span>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 hover:border-black text-sm transition-all">12</button>
+</div>
+<button class="w-12 h-12 flex items-center justify-center border border-outline-variant/30 hover:border-black transition-all group">
+<span class="material-symbols-outlined text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-[#f6f3f2] dark:bg-[#121212] rounded-none w-full border-t border-black/5">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 w-full max-w-[1920px] mx-auto">
+<div class="space-y-6">
+<h2 class="font-['Noto_Serif'] text-xl font-bold text-black dark:text-white uppercase tracking-tighter">ATELIER</h2>
+<p class="font-['Manrope'] text-[0.6875rem] tracking-[0.1em] text-neutral-600 dark:text-neutral-400 leading-relaxed">
+                    CURATING THE FINEST GARMENTS THROUGH A LENS OF ARCHITECTURAL PRECISION AND ETHICAL CRAFTSMANSHIP.
+                </p>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-[0.6875rem] font-bold tracking-[0.1em] text-black dark:text-white uppercase mb-6">Collections</h4>
+<ul class="space-y-4 font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase">
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="/shop">Shop All</a></li>
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="/shop">New Arrivals</a></li>
+<li><a class="font-bold underline underline-offset-4" href="/shop">Seasonal Editorial</a></li>
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="/shop">Archive</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-[0.6875rem] font-bold tracking-[0.1em] text-black dark:text-white uppercase mb-6">Support</h4>
+<ul class="space-y-4 font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase">
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">CONTACT</a></li>
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">SHIPPING</a></li>
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">RETURNS</a></li>
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">PRIVACY</a></li>
+<li><a class="text-neutral-600 dark:text-neutral-400 hover:opacity-70 transition-opacity" href="#">TERMS</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-['Manrope'] text-[0.6875rem] font-bold tracking-[0.1em] text-black dark:text-white uppercase mb-6">Atelier Newsletter</h4>
+<div class="flex border-b border-black/20 pb-2">
+<input class="bg-transparent border-none focus:ring-0 w-full font-['Manrope'] text-[0.6875rem] tracking-[0.1em] uppercase placeholder:text-neutral-400" placeholder="Email Address" type="email"/>
+<button class="hover:opacity-70 transition-opacity"><span class="material-symbols-outlined">trending_flat</span></button>
+</div>
+<p class="font-['Manrope'] text-[0.5rem] tracking-[0.1em] text-neutral-500 mt-4 uppercase">© 2024 THE DIGITAL ATELIER. ALL RIGHTS RESERVED.</p>
+</div>
+</div>
+</footer>
+<script src="cart.js"></script>
+</body></html>
